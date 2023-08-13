@@ -58,3 +58,14 @@ s3 = 100
 
 grade = get_grade(s1, s2, s3)
 print(f"The grade letter is: {grade}")
+
+
+# Version 3
+
+def get_grade(s1, s2, s3):
+    return {6:'D', 7:'C', 8:'B', 9:'A', 10:'A'}.get((s1 + s2 + s3) / 30, 'F')
+
+# version 4
+
+def get_grade(*s):
+    return 'FFFFFFDCBAA'[sum(s)//30]
