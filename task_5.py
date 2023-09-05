@@ -24,3 +24,6 @@ def move_zeros(lst):
 
 lst = ([1, 0, 1, 2, 0, 1, 3])    # should return [1, 1, 2, 1, 3, 0, 0]
 print(move_zeros(lst))
+
+
+# 2nd version

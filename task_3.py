@@ -45,6 +45,8 @@ def greet(language):
     # Check if the language is in the database
     if lowercase_language in database:
         return database[lowercase_language]
+    elif lowercase_language == "":
+        return "IP_ADDRESS_REQUIRED - no ip address was supplied"
     else:
         return "Welcome"  # Default to English if language not found
 
